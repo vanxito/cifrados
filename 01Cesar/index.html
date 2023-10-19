@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado cesar</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<div class="header">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../01Cesar/index.html"> Cifrado Cesar</a></li>
+          <li><a href="../02Viggener/viggenere.html">Cifrado Viggenere</a></li>
+        </ul>
+      </nav>
+    </header></div>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="texto">
+                        Texto a Cifrar/Descifrar:
+                    </label>
+                    <textarea  type="text" name="texto" id="texto" class="form-control"></textarea>
+                </div>
+
+            </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label for="desplazamiento">Desplazamiento del cifrado</label>
+        <input type="range" min="1" max="25" step="1" id="desplazamiento" nombre="desplazamiento" class="form-control">
+        </div>
+    </div>
+<div class="col-md-12">
+        <div class="form-group">
+            <label for="cifrado">Texto cifrado</label>
+        <input type="text" id="cifrado" nombre="cifrado" class="form-control" disabled="disabled">
+        </div>
+
+    </div>
+
+        </div>
+    </div>
+    <script src="./js/cesar.js"></script>
+</body>
+</html>
